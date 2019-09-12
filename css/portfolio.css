@@ -1,0 +1,42 @@
+
+.inner { clear: both; max-width: 1140px; margin: 0; padding: 0;}
+.inner:before { content: " "; display: table; }
+
+.portfolio-item {
+margin-left: 1%;
+display: inline-block;
+border: 1px solid #bcdcf2;
+padding: 10px;
+background-color: white;
+position: relative;
+}
+.first { clear: both; margin-left: 0; }
+
+img { max-width: 100%; }
+
+.portfolio-item .content {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: red;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: all 0.35s ease-in-out;
+}
+
+.portfolio-item .content:hover {
+  opacity: 0.8;
+}
+
+.content h2 {
+font-size: 18px;
+text-transform: none;
+margin: 0px;
+color: white;
+text-align: center;
+position: absolute;
+top: 40%;
+width: 100%;
+margin-top: -10px;
+}
